@@ -119,7 +119,7 @@ siedzenia.addEventListener("click", () => {
 });
 
 form.addEventListener("submit", (e) => {
-  const regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+  const regName = /^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]+ [AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]+$/;
   e.preventDefault();
   if (!regName.test(fullname.value)) {
     error.innerHTML = "Error";
