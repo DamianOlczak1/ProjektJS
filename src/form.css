@@ -4,13 +4,14 @@ form {
   margin: 0 auto;
   width: 50%;
   border-radius: 10px;
+  box-shadow: 4px 3px 27px -3px rgba(66, 68, 90, 1);
 }
 
 input[type="text"],
-select {
+select,
+input[type="date"] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
@@ -77,10 +78,16 @@ button[type="submit"]:hover {
   border-radius: 4px;
   background-color: #eee;
 }
-input[type="date" i] {
-  font-family: monospace;
-  padding-inline-start: 1px;
-  cursor: default;
-  overflow: hidden;
-  padding-bottom: 20px;
+
+.radiobutton {
+  margin: 1em 0;
+}
+.price {
+  font-size: 22px;
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

@@ -1,4 +1,5 @@
 import { arrayCars } from "./cars";
+import "./style.css";
 import "./shop.css";
 
 const info = document.getElementById("info");

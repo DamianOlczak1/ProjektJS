@@ -1,13 +1,7 @@
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import "./style.css";
 import "./contact.css";
-
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: require("leaflet/dist/images/marker-icon.png"),
-  shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
-});
 
 const form = document.getElementById("contact-form");
 form.addEventListener("submit", function (event) {
@@ -15,8 +9,6 @@ form.addEventListener("submit", function (event) {
 
   const formData = new FormData(event.target);
   const name = formData.get("name");
-  const email = formData.get("email");
-  const message = formData.get("message");
 
   alert(
     `Thank you for contacting us, ${name}! We will get back to you as soon as possible.`

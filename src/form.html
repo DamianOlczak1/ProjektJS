@@ -4,84 +4,97 @@
     <title>Car purchase form</title>
   </head>
   <body>
-    <form action="" id="form">
-      <div>
-        <div class="titleContainer">
-          <p>Brand :</p>
-          <p id="carBrand"></p>
-        </div>
-        <div class="titleContainer">
-          <p>Model :</p>
-          <p id="model"></p>
-        </div>
+    <div class="formContainer">
+      <form action="" id="form">
         <div>
-          <p>Fullname:</p>
-          <input required type="text" id="fullname" />
+          <div class="titleContainer">
+            <h1>Brand : <span id="carBrand"></span></h1>
+          </div>
+          <div class="titleContainer">
+            <h2>Model : <span id="model"></span></h2>
+          </div>
+          <div>
+            <p><b>Fullname:</b></p>
+            <input required type="text" id="fullname" />
+          </div>
+          <div>
+            <p><b>Pick up place:</b></p>
+            <input id="pickup" required type="text" />
+          </div>
+          <div>
+            <p><b>Pick up date:</b></p>
+            <input type="date" id="date" name="date" />
+          </div>
         </div>
-        <div>
-          <p>Pick up place:</p>
-          <input id="pickup" required type="text" />
+
+        <label for="payment"
+          ><p><b>Payment:</b></p></label
+        >
+        <select id="payment" name="payment" required>
+          <option value="">Choose option</option>
+          <option value="gotowka">Cash</option>
+          <option value="kredyt">Credit</option>
+          <option value="leasing">Leasing</option>
+        </select>
+
+        <div class="radiobutton">
+          <label for="insurance"><b>Insurance:</b></label>
+          <label
+            ><input
+              id="insuranceyes"
+              type="radio"
+              name="insurance"
+              value="tak"
+            />
+            Yes</label
+          >
+          <label
+            ><input
+              id="insuranceno"
+              type="radio"
+              name="insurance"
+              value="nie"
+            />
+            No</label
+          >
         </div>
-        <div>
-          <p>Pick up date:</p>
-          <input type="date" id="date" name="date" />
+
+        <div class="checkboxes">
+          <label for="extras"><b>Extras:</b></label>
+          <label
+            ><input
+              id="nawigacja"
+              type="checkbox"
+              name="extras"
+              value="nawigacja"
+            />
+            Navigation +5000PLN</label
+          >
+          <label
+            ><input id="kamera" type="checkbox" name="extras" value="kamera" />
+            Rear view camera +7000PLN</label
+          >
+          <label
+            ><input
+              id="siedzenia"
+              type="checkbox"
+              name="extras"
+              value="skorzane_siedzenia"
+            />
+            Leather seats +2000PLN</label
+          >
         </div>
-      </div>
-
-      <label for="payment">Payment:</label>
-      <select id="payment" name="payment" required>
-        <option value="">Choose option</option>
-        <option value="gotowka">Cash</option>
-        <option value="kredyt">Credit</option>
-        <option value="leasing">Leasing</option>
-      </select>
-
-      <div class="radiobutton">
-        <label for="insurance">Insurance:</label>
-        <label
-          ><input id="insuranceyes" type="radio" name="insurance" value="tak" />
-          Yes</label
-        >
-        <label
-          ><input id="insuranceno" type="radio" name="insurance" value="nie" />
-          No</label
-        >
-      </div>
-
-      <div class="checkboxes">
-        <label for="extras">Extras:</label>
-        <label
-          ><input
-            id="nawigacja"
-            type="checkbox"
-            name="extras"
-            value="nawigacja"
-          />
-          Navigation +5000PLN</label
-        >
-        <label
-          ><input id="kamera" type="checkbox" name="extras" value="kamera" />
-          Rear view camera +7000PLN</label
-        >
-        <label
-          ><input
-            id="siedzenia"
-            type="checkbox"
-            name="extras"
-            value="skorzane_siedzenia"
-          />
-          Leather seats +2000PLN</label
-        >
-      </div>
-      <div class="titleContainer">
-        <p>Price:</p>
-        <p id="price"></p>
-      </div>
-      <p id="error"></p>
-      <div class="space">
-        <a href="shop.html">Back</a>
-        <button type="submit">Submit</button>
-      </div>
-    </form>
+        <div class="titleContainer price">
+          <p><strong>Price: </strong></p>
+          <p id="price"></p>
+          <p>PLN</p>
+        </div>
+        <p id="error"></p>
+        <div class="space">
+          <a href="shop.html">Back</a>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

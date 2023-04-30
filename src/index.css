@@ -1,41 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0 auto;
-  text-align: center;
-  background-image: url("./assets/gory.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-header {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  margin: auto;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-nav ul li :hover {
-  color: rgb(231, 203, 127);
-  text-decoration: none;
-}
 h1 {
   width: 1000px;
+}
+body {
+  backdrop-filter: none;
 }
 
 .gradient-text {

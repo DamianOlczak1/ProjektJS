@@ -1,4 +1,5 @@
 import { arrayCars } from "./cars";
+import "./style.css";
 import "./final.css";
 
 const urlParams = new URLSearchParams(window.location.search);
