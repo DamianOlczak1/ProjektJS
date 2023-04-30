@@ -1,9 +1,9 @@
-import AudiA8 from "./assets/audia8.jpg"
-import vwpassatb6 from "./assets/vwpassatb6.jpg"
-import BMW from "./assets/bmw3gt.jpg"
-import Mercedes from "./assets/mercedesgle.jpg"
-import Volkswagen from "./assets/wvgolfvii.jpg"
-import AudiA3 from "./assets/audia38v.jpg"
+import AudiA8 from "./assets/audia8.jpg";
+import vwpassatb6 from "./assets/vwpassatb6.jpg";
+import BMW from "./assets/bmw3gt.jpg";
+import Mercedes from "./assets/mercedesgle.jpg";
+import Volkswagen from "./assets/wvgolfvii.jpg";
+import AudiA3 from "./assets/audia38v.jpg";
 
 export const arrayCars = [
   {
