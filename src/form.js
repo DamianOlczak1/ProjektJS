@@ -119,10 +119,14 @@ siedzenia.addEventListener("click", () => {
 });
 
 form.addEventListener("submit", (e) => {
-  const regName = /^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]+ [AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]+$/;
+  const regName =
+    /^[AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]+ [AaĄąBbCcĆćDdEeĘęFfGgHhIiJjKkLlŁłMmNnŃńOoÓóPpRrSsŚśTtUuWwYyZzŹźŻż]+$/;
   e.preventDefault();
   if (!regName.test(fullname.value)) {
-    error.innerHTML = "Error";
+    (error.innerHTML = "error"),
+      alert(
+        "ERROR: U need to write fullname (one part of ur fullname is missing)"
+      );
   } else {
     window.localStorage.clear("user");
     window.location.href = `final.html?id=${carId}&date=${date.value}`;
