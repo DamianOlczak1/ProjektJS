@@ -1,7 +1,7 @@
 form {
   background-color: #eee;
   padding: 20px;
-  margin: 0 auto;
+  margin-top: 50px;
   width: 50%;
   border-radius: 10px;
   box-shadow: 4px 3px 27px -3px rgba(66, 68, 90, 1);
@@ -86,7 +86,7 @@ button[type="submit"]:hover {
   font-size: 22px;
 }
 .formContainer {
-  margin-top: 50px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
