@@ -125,7 +125,7 @@ form.addEventListener("submit", (e) => {
   if (!regName.test(fullname.value)) {
     (error.innerHTML = "error"),
       alert(
-        "ERROR: U need to write fullname (one part of ur fullname is missing)"
+        "ERROR: U need to write full name (one part of ur fullname is missing)"
       );
   } else {
     window.localStorage.clear("user");
